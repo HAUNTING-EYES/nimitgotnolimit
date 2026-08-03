@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nimit Jain — Founder &amp; CEO, Insturix</title>
-<meta name="description" content="Nimit Jain — Founder & CEO of Insturix. One platform for the entire content production, from script to publish.">
+<title>Nimit Jain, Founder &amp; CEO of Insturix</title>
+<meta name="description" content="Nimit Jain, Founder &amp; CEO of Insturix. One platform for the entire content production, from script to publish.">
 <meta name="theme-color" content="#f4f2ee">
 <link rel="canonical" href="https://nimitgotnolimit.com/">
-<meta property="og:title" content="Nimit Jain — Founder &amp; CEO, Insturix">
+<meta property="og:title" content="Nimit Jain, Founder &amp; CEO of Insturix">
 <meta property="og:description" content="One platform for the entire content production. Script to publish.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nimitgotnolimit.com/">
@@ -22,9 +22,9 @@
 <script>document.documentElement.classList.add('js')</script>
 <style>
 /* ==========================================================================
-   POSTER V4 — BRUTAL
+   NIMIT JAIN
    Reference: brutalist web showcase, type-foundry specimens.
-   Outlined display type that FILLS on hover. 3px rules. Instant hovers —
+   Outlined display type that FILLS on hover. 3px rules. Instant hovers,
    no easing anywhere, state flips like a switch. Blue as pure signal.
    ========================================================================== */
 :root{
@@ -68,9 +68,10 @@ h1 .out:hover{color:var(--blue);-webkit-text-stroke-color:var(--blue)}
 h1 .fill{color:var(--ink)}
 h1 .fill:hover{color:var(--blue)}
 
-.herogrid{display:grid;grid-template-columns:1fr clamp(190px,24vw,320px);
-  gap:clamp(16px,3.6vw,48px);align-items:end;margin-top:clamp(18px,3.4vh,36px);
+.herogrid{display:grid;grid-template-columns:1fr clamp(250px,34vw,440px);
+  gap:clamp(16px,3.6vw,56px);align-items:start;margin-top:clamp(14px,2.4vh,26px);
   padding-bottom:clamp(20px,3.6vh,40px)}
+.herogrid p{padding-top:clamp(6px,1.4vh,16px)}
 .herogrid p{margin:0;font-size:clamp(16px,2vw,22px);line-height:1.35;max-width:34ch;
   font-weight:600;letter-spacing:-.02em}
 .herogrid p u{text-decoration-color:var(--blue);text-decoration-thickness:3px;text-underline-offset:4px}
@@ -90,7 +91,7 @@ h1 .fill:hover{color:var(--blue)}
 .portrait.empty .ph{display:flex}
 .portrait.empty img{display:none}
 
-/* ticker — hard, no easing feel */
+/* ticker: hard, no easing feel */
 .tick{background:var(--ink);color:var(--paper);overflow:hidden;display:flex;
   border-top:var(--bw) solid var(--ink);border-bottom:var(--bw) solid var(--ink);
   padding:10px 0;user-select:none}
@@ -99,7 +100,7 @@ h1 .fill:hover{color:var(--blue)}
   font-weight:700;padding-right:44px}
 .tick span i{font-style:normal;color:var(--blue);padding-right:44px}
 
-/* stats table — ledger */
+/* stats table / ledger */
 .ledger{border-bottom:var(--bw) solid var(--ink);display:grid;grid-template-columns:repeat(4,1fr)}
 .ledger div{padding:clamp(18px,3vw,38px) clamp(10px,1.6vw,22px);border-right:1px solid var(--ink)}
 .ledger div:last-child{border-right:0}
@@ -119,7 +120,7 @@ h2{font-size:clamp(32px,6.4vw,80px);font-weight:800;letter-spacing:-.048em;line-
 .body{font-size:clamp(15px,1.7vw,18px);color:var(--mid);max-width:52ch;line-height:1.5;
   margin:0 0 clamp(24px,4vh,40px);font-weight:500}
 
-/* stages — spec sheet rows */
+/* stages: spec sheet rows */
 .spec{border:var(--bw) solid var(--ink)}
 .spec .s{display:grid;grid-template-columns:70px 1fr 1.2fr;align-items:center;
   border-bottom:1px solid var(--ink)}
@@ -134,7 +135,7 @@ h2{font-size:clamp(32px,6.4vw,80px);font-weight:800;letter-spacing:-.048em;line-
 .spec small{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;
   padding:0 16px;color:inherit;opacity:.65}
 
-/* record — index cards */
+/* record: index cards */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;
   border:var(--bw) solid var(--ink)}
 .card{border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);
@@ -147,11 +148,24 @@ h2{font-size:clamp(32px,6.4vw,80px);font-weight:800;letter-spacing:-.048em;line-
   text-transform:uppercase}
 .card p{margin:0;font-size:12.5px;color:var(--mid);line-height:1.5;font-weight:500}
 
-/* backing — stamps */
+/* backing: stamps */
 .stamps{display:flex;flex-wrap:wrap;gap:10px}
 .stamps span{border:var(--bw) solid var(--ink);font-family:var(--mono);font-size:10.5px;
   letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:10px 14px}
 .stamps span:hover{background:var(--ink);color:var(--paper)}
+
+/* email line: mailto often does nothing without a mail client, so the address
+   is shown in full and can be copied with one click */
+.mailline{font-family:var(--mono);font-weight:700;letter-spacing:.02em;
+  font-size:clamp(13px,2.3vw,21px);margin:0 0 clamp(18px,3vh,30px);
+  display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.mailline a{border-bottom:3px solid var(--blue);padding-bottom:2px;word-break:break-all}
+.mailline a:hover{background:var(--blue);color:#fff}
+.mailline button{font:inherit;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+  border:var(--bw) solid var(--ink);background:none;cursor:pointer;padding:8px 13px;
+  color:var(--ink);font-weight:700;flex-shrink:0}
+.mailline button:hover{background:var(--ink);color:var(--paper)}
+.mailline button.done{background:var(--blue);border-color:var(--blue);color:#fff}
 
 /* end */
 .end{padding:clamp(44px,7.5vh,96px) 0 clamp(20px,3vh,36px);border-bottom:0}
@@ -172,7 +186,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;paddin
 
 @media(max-width:820px){
   .herogrid{grid-template-columns:1fr}
-  .portrait{max-width:240px}
+  .portrait{max-width:320px}
   .ledger{grid-template-columns:repeat(2,1fr)}
   .ledger div:nth-child(2){border-right:0}
   .ledger div:nth-child(-n+2){border-bottom:1px solid var(--ink)}
@@ -190,17 +204,17 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;paddin
 <div class="bar"></div>
 <div class="frame">
   <div class="meta">
-    <span>NIMIT—JAIN</span>
-    <span>FOUNDER / CEO — INSTURIX</span>
-    <span>NOIDA, IN</span>
-    <span>V4—BRUTAL</span>
+    <span>NIMIT JAIN</span>
+    <span>FOUNDER &amp; CEO / INSTURIX</span>
+    <span>NOIDA, INDIA</span>
+    <span>OPEN TO CONVERSATIONS</span>
   </div>
 </div>
 <div class="bar"></div>
 
 <div class="frame">
   <header class="hero">
-    <p class="sys"><b>SYS.01</b> PORTFOLIO <span>—</span> AI × CONTENT PRODUCTION <span>—</span> EST. MAY 2025</p>
+    <p class="sys"><b>SYS.01</b> AI × CONTENT PRODUCTION <span>/</span> B2B SAAS <span>/</span> BACKED BY GOOGLE &amp; MICROSOFT <span>/</span> EST. MAY 2025</p>
     <h1>
       <span class="out">Nimit</span><br>
       <span class="fill">Jain.</span>
@@ -210,7 +224,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;paddin
          Script through publish. One platform. No tool-switching.</p>
       <figure class="portrait" id="portrait" style="margin:0">
         <img id="photo" src="photo.jpg" alt="Nimit Jain">
-        <div class="ph"><b>[—]</b>DROP PHOTO.JPG<br>INTO THIS FOLDER</div>
+        <div class="ph"><b>[ ]</b>DROP PHOTO.JPG<br>INTO THIS FOLDER</div>
         <figcaption><span>N. JAIN</span><span>FIG.01</span></figcaption>
       </figure>
     </div>
@@ -219,32 +233,32 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;paddin
 
 <div class="tick" aria-hidden="true">
   <div class="track" id="track">
-    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i></span>
-    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i></span>
+    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i> ONE PLATFORM, ENTIRE PRODUCTION <i>//</i> 350+ CUSTOMERS <i>//</i> 12 TOOLS, 6 STAGES <i>//</i> BRIEF IN, FINISHED VIDEO OUT <i>//</i></span>
+    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i> ONE PLATFORM, ENTIRE PRODUCTION <i>//</i> 350+ CUSTOMERS <i>//</i> 12 TOOLS, 6 STAGES <i>//</i> BRIEF IN, FINISHED VIDEO OUT <i>//</i></span>
   </div>
   <div class="track" id="track2">
-    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i></span>
-    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i></span>
+    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i> ONE PLATFORM, ENTIRE PRODUCTION <i>//</i> 350+ CUSTOMERS <i>//</i> 12 TOOLS, 6 STAGES <i>//</i> BRIEF IN, FINISHED VIDEO OUT <i>//</i></span>
+    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i> ONE PLATFORM, ENTIRE PRODUCTION <i>//</i> 350+ CUSTOMERS <i>//</i> 12 TOOLS, 6 STAGES <i>//</i> BRIEF IN, FINISHED VIDEO OUT <i>//</i></span>
   </div>
 </div>
 
 <div class="frame">
   <div class="ledger">
-    <div><b data-count="350" data-suffix="+">0</b><span>CUSTOMERS —<br>3.5 MONTHS</span></div>
-    <div><b data-count="20" data-suffix="+">0</b><span>PEOPLE —<br>ON THE TEAM</span></div>
-    <div><b data-count="12">0</b><span>TOOLS —<br>INSIDE STUDIO</span></div>
-    <div><b data-count="6" data-pad="2">0</b><span>PRODUCTION —<br>STAGES</span></div>
+    <div><b data-count="350" data-suffix="+">0</b><span>PAID &amp; FREE CUSTOMERS<br>IN THE FIRST 3.5 MONTHS</span></div>
+    <div><b data-count="20" data-suffix="+">0</b><span>PEOPLE ON THE TEAM<br>ACROSS PRODUCT &amp; GTM</span></div>
+    <div><b data-count="12">0</b><span>TOOLS INSIDE STUDIO<br>ONE BROWSER TAB</span></div>
+    <div><b data-count="6" data-pad="2">0</b><span>STAGES, BRIEF TO PUBLISH<br>NOTHING TO INSTALL</span></div>
   </div>
 
   <section>
     <span class="tag">01 / THE COMPANY</span>
     <h2>One platform,<br>entire production.</h2>
     <p class="body">Most teams stitch six tools together and lose the thread between them.
-       Studio keeps every stage on the same brief and the same brand. Hand it a brief —
-       every cut comes back shaped for its channel. All in the browser.</p>
+       Studio keeps every stage on the same brief and the same brand. Hand it a brief.
+       Every cut comes back shaped for its channel. All in the browser.</p>
     <div class="spec rv">
       <div class="s"><span class="no">01</span><h3>Script</h3><small>Briefs → structured treatments</small></div>
-      <div class="s"><span class="no">02</span><h3>Edit</h3><small>Captions, colour, audio — handled</small></div>
+      <div class="s"><span class="no">02</span><h3>Edit</h3><small>Captions, colour, audio / handled</small></div>
       <div class="s"><span class="no">03</span><h3>Analyze</h3><small>Pacing / retention / brand</small></div>
       <div class="s"><span class="no">04</span><h3>Design</h3><small>Frames generated + ranked</small></div>
       <div class="s"><span class="no">05</span><h3>Music</h3><small>Licensed tracks matched</small></div>
@@ -256,36 +270,39 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;paddin
     <span class="tag">02 / RECORD</span>
     <h2>Track record.</h2>
     <div class="cards rv">
-      <div class="card"><span class="yr">2025 — NOW</span><h3>Insturix</h3>
+      <div class="card"><span class="yr">MAY 2025 &rarr; NOW</span><h3>Insturix</h3>
         <p>Founder &amp; CEO. Team of 20+. Google + Microsoft for Startups. Incubated at
            Shiv Nadar University.</p></div>
-      <div class="card"><span class="yr">2026 — NOW</span><h3>SalesOS</h3>
-        <p>Designed + built. Self-hosted sales stack: CRM enrichment, call-recording
-           analysis, daily coaching reports, auto follow-ups.</p></div>
-      <div class="card"><span class="yr">2026</span><h3>Modifyed Digital</h3>
+      <div class="card"><span class="yr">MAY 2026 &rarr; JUL 2026</span><h3>Modifyed Digital</h3>
         <p>BD Intern. Outreach systems, lead-enrichment pipelines, client proposals.</p></div>
-      <div class="card"><span class="yr">ONGOING</span><h3>Stocker</h3>
-        <p>Independent research. Multi-agent algo-trading system for Indian + US equities.</p></div>
-      <div class="card"><span class="yr">2023 — 2024</span><h3>Quintessence MUN</h3>
-        <p>Founder. 120+ team, 250+ tickets. TATA Water, Upstox, BookMyShow. IIT Roorkee,
+      <div class="card"><span class="yr">MAY 2025 &rarr; JUL 2025</span><h3>Charchit Jain Fdn.</h3>
+        <p>Teacher. Maths + science for underprivileged students, ages 10 to 14.</p></div>
+      <div class="card"><span class="yr">2024 &rarr; 2027</span><h3>BBA</h3>
+        <p>Jaypee Institute of Information Technology, Noida. Business management,
+           managerial economics, accounting.</p></div>
+      <div class="card"><span class="yr">JUL 2023 &rarr; APR 2024</span><h3>Quintessence MUN</h3>
+        <p>Founder. 120+ team, 250+ tickets. TATA Water, Upstox. IIT Roorkee,
            Guwahati, Bhubaneswar.</p></div>
-      <div class="card"><span class="yr">2022 — 2023</span><h3>Event Production</h3>
+      <div class="card"><span class="yr">2022 &rarr; 2023</span><h3>Event Production</h3>
         <p>Lead organiser. Production + partnerships for Delhi NCR student conferences.
            100+ trained.</p></div>
-      <div class="card"><span class="yr">2025 — NOW</span><h3>Charchit Jain Fdn.</h3>
-        <p>Teacher. Maths + science, ages 10–14.</p></div>
     </div>
   </section>
 
   <section>
     <span class="tag">03 / OFF THE CLOCK</span>
-    <h2>After hours.</h2>
-    <div class="stamps rv">
+    <h2>Side projects.</h2>
+    <div class="cards rv">
+      <div class="card"><span class="yr">2026 &rarr; NOW</span><h3>SalesOS</h3>
+        <p>Designed + built. Self-hosted sales stack: CRM enrichment, call-recording
+           analysis, daily coaching reports, auto follow-ups.</p></div>
+      <div class="card"><span class="yr">ONGOING</span><h3>Stocker</h3>
+        <p>Independent research. Multi-agent algo-trading system for Indian + US equities.</p></div>
+    </div>
+    <div class="stamps rv" style="margin-top:14px">
       <span>THEORETICAL PHYSICS</span>
       <span>QUANTUM COMPUTING</span>
       <span>PROPULSION RESEARCH</span>
-      <span>YOGA + MEDITATION</span>
-      <span>BBA — JIIT NOIDA '27</span>
     </div>
   </section>
 
@@ -296,8 +313,8 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;paddin
       <span>GOOGLE FOR STARTUPS</span>
       <span>MICROSOFT FOR STARTUPS</span>
       <span>DPIIT RECOGNIZED</span>
-      <span>SHIV NADAR UNIV — INCUBATED</span>
-      <span>RAMANUJAN SUPERCOMPUTER</span>
+      <span>SHIV NADAR UNIV / INCUBATED</span>
+      <span>UP GOVERNMENT GRANT</span>
       <span>STARTUPBASE DAILY WINNER '26</span>
     </div>
   </section>
@@ -305,9 +322,15 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;paddin
   <section class="end">
     <span class="tag">05 / CONTACT</span>
     <h2><a href="mailto:jainnimit728@gmail.com">Say hello.</a></h2>
+    <p class="mailline">
+      <a href="mailto:jainnimit728@gmail.com">jainnimit728@gmail.com</a>
+      <button type="button" id="copymail" data-mail="jainnimit728@gmail.com">Copy</button>
+    </p>
     <div class="ends rv">
       <a href="mailto:jainnimit728@gmail.com">EMAIL</a>
       <a href="https://x.com/nimitgotnolimit" target="_blank" rel="noopener">X</a>
+      <a href="https://instagram.com/nimitgotnolimit" target="_blank" rel="noopener">INSTAGRAM</a>
+      <a href="https://youtube.com/@nimitgotnolimit" target="_blank" rel="noopener">YOUTUBE</a>
       <a href="https://in.linkedin.com/in/nimit-jain2005" target="_blank" rel="noopener">LINKEDIN</a>
       <a href="https://insturix.com" target="_blank" rel="noopener">INSTURIX.COM</a>
     </div>
@@ -351,6 +374,28 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;paddin
     var io=new IntersectionObserver(function(es){es.forEach(function(e){
       if(e.isIntersecting){run(e.target);io.unobserve(e.target)}})},{threshold:.4});
     nums.forEach(function(n){io.observe(n)});
+  })();
+
+  (function(){
+    var b=document.getElementById('copymail');
+    if(!b)return;
+    b.addEventListener('click',function(){
+      var mail=b.dataset.mail, done=function(){
+        b.textContent='Copied';b.classList.add('done');
+        setTimeout(function(){b.textContent='Copy';b.classList.remove('done')},1600);
+      };
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(mail).then(done,fallback);
+      } else fallback();
+      function fallback(){
+        var t=document.createElement('textarea');
+        t.value=mail;t.setAttribute('readonly','');
+        t.style.position='fixed';t.style.opacity='0';
+        document.body.appendChild(t);t.select();
+        try{document.execCommand('copy');done()}catch(e){}
+        document.body.removeChild(t);
+      }
+    });
   })();
 
   (function(){
