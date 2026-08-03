@@ -1,419 +1,893 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nimit Jain, Founder &amp; CEO of Insturix</title>
-<meta name="description" content="Nimit Jain, Founder &amp; CEO of Insturix. One platform for the entire content production, from script to publish.">
-<meta name="theme-color" content="#f4f2ee">
-<link rel="canonical" href="https://nimitgotnolimit.com/">
-<meta property="og:title" content="Nimit Jain, Founder &amp; CEO of Insturix">
-<meta property="og:description" content="One platform for the entire content production. Script to publish.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://nimitgotnolimit.com/">
-<meta property="og:image" content="https://nimitgotnolimit.com/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@nimitgotnolimit">
-<meta name="twitter:creator" content="@nimitgotnolimit">
-<meta name="twitter:image" content="https://nimitgotnolimit.com/og.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Ctext x='50' y='52' font-family='Helvetica,Arial,sans-serif' font-size='64' font-weight='800' fill='%23f4f2ee' text-anchor='middle' dominant-baseline='central'%3EN%3C/text%3E%3Ccircle cx='79' cy='75' r='9' fill='%23006D7A'/%3E%3C/svg%3E">
-<script>document.documentElement.classList.add('js')</script>
-<style>
-/* ==========================================================================
-   NIMIT JAIN
-   Reference: brutalist web showcase, type-foundry specimens.
-   Outlined display type that FILLS on hover. 3px rules. Instant hovers,
-   no easing anywhere, state flips like a switch. Blue as pure signal.
-   ========================================================================== */
-:root{
-  --paper:#f4f2ee; --ink:#0a0a0a; --mid:#57544e; --dim:#8f8b83;
-  --blue:#006D7A;
-  --sans:"Inter",ui-sans-serif,-apple-system,"Helvetica Neue","Segoe UI",system-ui,sans-serif;
-  --mono:ui-monospace,"SF Mono",Consolas,monospace;
-  --pad:clamp(14px,3.2vw,36px);
-  --bw:3px;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nimit Jain is the founder and CEO of Insturix, an AI-native content production platform. One platform for the entire production: script, edit, analyze, design, music and publish.">
+  <meta name="theme-color" content="#f3efe6">
+  <title>Nimit Jain, Founder &amp; CEO of Insturix</title>
+  <style>:root{
+  --paper:#f3efe6;
+  --paper-2:#e7e0d4;
+  --ink:#0a0a09;
+  --ink-2:#141412;
+  --muted:#615d56;
+  --rule:#1b1b18;
+  --signal:#ff4b1f;
+  --signal-2:#d93a16;
+  --acid:#dfff00;
+  --pad:clamp(20px,4vw,68px);
+  --display:"Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
-  font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{scroll-behavior:smooth;background:var(--paper);color:var(--ink);overflow-x:hidden}
+body{margin:0;font-family:var(--sans);font-size:16px;line-height:1.45;overflow-x:hidden;background:var(--paper);color:var(--ink)}
 a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-::selection{background:var(--blue);color:#fff}
-:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
-
-.frame{padding:0 var(--pad)}
-.bar{height:var(--bw);background:var(--ink)}
-
-/* meta strip */
-.meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;
-  font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
-  padding:12px 0;font-weight:700}
-.meta span:nth-child(2){color:var(--blue)}
-
-/* hero */
-.hero{padding:clamp(20px,4vh,44px) 0 0}
-.sys{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
-  margin:0 0 clamp(14px,2.4vh,24px);display:flex;gap:22px;flex-wrap:wrap;color:var(--mid)}
-.sys b{color:var(--ink);font-weight:700}
-
-h1{margin:0;font-size:clamp(60px,17.5vw,250px);line-height:.78;letter-spacing:-.05em;
-  font-weight:800;text-transform:uppercase;word-break:keep-all}
-h1 .out{color:transparent;-webkit-text-stroke:2px var(--ink);text-stroke:2px var(--ink);
-  transition:none}
-h1 .out:hover{color:var(--blue);-webkit-text-stroke-color:var(--blue)}
-@supports not (-webkit-text-stroke:2px black){ h1 .out{color:var(--ink)} }
-h1 .fill{color:var(--ink)}
-h1 .fill:hover{color:var(--blue)}
-
-.herogrid{display:grid;grid-template-columns:1fr clamp(250px,34vw,440px);
-  gap:clamp(16px,3.6vw,56px);align-items:start;margin-top:clamp(14px,2.4vh,26px);
-  padding-bottom:clamp(20px,3.6vh,40px)}
-.herogrid p{padding-top:clamp(6px,1.4vh,16px)}
-.herogrid p{margin:0;font-size:clamp(16px,2vw,22px);line-height:1.35;max-width:34ch;
-  font-weight:600;letter-spacing:-.02em}
-.herogrid p u{text-decoration-color:var(--blue);text-decoration-thickness:3px;text-underline-offset:4px}
-
-.portrait{position:relative;aspect-ratio:3/4;overflow:hidden;border:var(--bw) solid var(--ink);
-  background:#e7e4de}
-.portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15)}
-.portrait:hover img{filter:none}
-.portrait figcaption{position:absolute;left:0;right:0;bottom:0;background:var(--ink);color:var(--paper);
-  font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
-  padding:8px 10px;display:flex;justify-content:space-between;font-weight:700}
-.ph{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;
-  justify-content:center;gap:8px;text-align:center;padding:16px;
-  font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;
-  color:var(--mid);font-weight:700;
-  background:repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(10,10,10,.05) 8px,rgba(10,10,10,.05) 16px)}
-.portrait.empty .ph{display:flex}
-.portrait.empty img{display:none}
-
-/* ticker: hard, no easing feel */
-.tick{background:var(--ink);color:var(--paper);overflow:hidden;display:flex;
-  border-top:var(--bw) solid var(--ink);border-bottom:var(--bw) solid var(--ink);
-  padding:10px 0;user-select:none}
-.tick .track{display:flex;flex-shrink:0;will-change:transform}
-.tick span{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
-  font-weight:700;padding-right:44px}
-.tick span i{font-style:normal;color:var(--blue);padding-right:44px}
-
-/* stats table / ledger */
-.ledger{border-bottom:var(--bw) solid var(--ink);display:grid;grid-template-columns:repeat(4,1fr)}
-.ledger div{padding:clamp(18px,3vw,38px) clamp(10px,1.6vw,22px);border-right:1px solid var(--ink)}
-.ledger div:last-child{border-right:0}
-.ledger b{display:block;font-size:clamp(30px,6vw,72px);font-weight:800;letter-spacing:-.05em;
-  line-height:.85;margin-bottom:10px;font-variant-numeric:tabular-nums}
-.ledger div:hover b{color:var(--blue)}
-.ledger span{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--mid);font-weight:700;line-height:1.6;display:block}
-
-/* sections */
-section{padding:clamp(40px,6.5vh,84px) 0;border-bottom:var(--bw) solid var(--ink)}
-.tag{display:inline-block;background:var(--ink);color:var(--paper);font-family:var(--mono);
-  font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;
-  padding:7px 12px;margin:0 0 clamp(18px,3vh,32px)}
-h2{font-size:clamp(32px,6.4vw,80px);font-weight:800;letter-spacing:-.048em;line-height:.9;
-  margin:0 0 18px;text-transform:uppercase}
-.body{font-size:clamp(15px,1.7vw,18px);color:var(--mid);max-width:52ch;line-height:1.5;
-  margin:0 0 clamp(24px,4vh,40px);font-weight:500}
-
-/* stages: spec sheet rows */
-.spec{border:var(--bw) solid var(--ink)}
-.spec .s{display:grid;grid-template-columns:70px 1fr 1.2fr;align-items:center;
-  border-bottom:1px solid var(--ink)}
-.spec .s:last-child{border-bottom:0}
-.spec .s:hover{background:var(--ink);color:var(--paper)}
-.spec .s:hover .no{background:var(--blue);color:#fff}
-.spec .no{font-family:var(--mono);font-size:12px;font-weight:700;text-align:center;
-  padding:clamp(12px,1.8vw,20px) 0;border-right:1px solid var(--ink);align-self:stretch;
-  display:flex;align-items:center;justify-content:center}
-.spec h3{margin:0;font-size:clamp(18px,3vw,34px);font-weight:800;letter-spacing:-.03em;
-  text-transform:uppercase;padding:clamp(12px,1.8vw,20px) 16px}
-.spec small{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;
-  padding:0 16px;color:inherit;opacity:.65}
-
-/* record: index cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;
-  border:var(--bw) solid var(--ink)}
-.card{border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);
-  padding:clamp(16px,2.2vw,26px);min-height:180px;display:flex;flex-direction:column}
-.card:hover{background:var(--blue);color:#fff}
-.card:hover .yr,.card:hover p{color:rgba(255,255,255,.75)}
-.card .yr{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--dim);font-weight:700;margin-bottom:auto;padding-bottom:16px}
-.card h3{margin:0 0 6px;font-size:clamp(18px,2.4vw,27px);font-weight:800;letter-spacing:-.03em;
-  text-transform:uppercase}
-.card p{margin:0;font-size:12.5px;color:var(--mid);line-height:1.5;font-weight:500}
-
-/* backing: stamps */
-.stamps{display:flex;flex-wrap:wrap;gap:10px}
-.stamps span{border:var(--bw) solid var(--ink);font-family:var(--mono);font-size:10.5px;
-  letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:10px 14px}
-.stamps span:hover{background:var(--ink);color:var(--paper)}
-
-/* email line: mailto often does nothing without a mail client, so the address
-   is shown in full and can be copied with one click */
-.mailline{font-family:var(--mono);font-weight:700;letter-spacing:.02em;
-  font-size:clamp(13px,2.3vw,21px);margin:0 0 clamp(18px,3vh,30px);
-  display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-.mailline a{border-bottom:3px solid var(--blue);padding-bottom:2px;word-break:break-all}
-.mailline a:hover{background:var(--blue);color:#fff}
-.mailline button{font:inherit;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
-  border:var(--bw) solid var(--ink);background:none;cursor:pointer;padding:8px 13px;
-  color:var(--ink);font-weight:700;flex-shrink:0}
-.mailline button:hover{background:var(--ink);color:var(--paper)}
-.mailline button.done{background:var(--blue);border-color:var(--blue);color:#fff}
-
-/* end */
-.end{padding:clamp(44px,7.5vh,96px) 0 clamp(20px,3vh,36px);border-bottom:0}
-.end h2{font-size:clamp(46px,12vw,168px);line-height:.8;margin-bottom:clamp(22px,4vh,42px)}
-.end h2 a:hover{color:var(--blue)}
-.ends{display:flex;flex-wrap:wrap;gap:0;border:var(--bw) solid var(--ink)}
-.ends a{flex:1 1 140px;text-align:center;font-family:var(--mono);font-size:11px;
-  letter-spacing:.13em;text-transform:uppercase;font-weight:700;padding:14px 10px;
-  border-right:1px solid var(--ink)}
-.ends a:last-child{border-right:0}
-.ends a:hover{background:var(--blue);color:#fff}
-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:16px 0 24px;
-  font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--dim);font-weight:700}
-
-.js .rv{opacity:0;transform:translateY(16px);transition:opacity .5s linear,transform .5s linear}
-.js .rv.in{opacity:1;transform:none}
-
-@media(max-width:820px){
-  .herogrid{grid-template-columns:1fr}
-  .portrait{max-width:320px}
-  .ledger{grid-template-columns:repeat(2,1fr)}
-  .ledger div:nth-child(2){border-right:0}
-  .ledger div:nth-child(-n+2){border-bottom:1px solid var(--ink)}
-  .spec .s{grid-template-columns:54px 1fr}
-  .spec small{grid-column:2;padding:0 16px 12px}
+img,svg{display:block;max-width:100%}
+button{font:inherit}
+::selection{background:var(--signal);color:#fff}
+:focus-visible{outline:3px solid var(--signal);outline-offset:4px}
+.progress{position:fixed;z-index:100;left:0;right:0;top:0;height:4px;background:transparent;pointer-events:none}
+.progress span{display:block;width:0;height:100%;background:var(--signal)}
+.site-header{height:82px;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(10,10,9,.22);position:sticky;top:0;z-index:90;background:color-mix(in srgb,var(--paper) 91%,transparent);backdrop-filter:blur(14px)}
+.wordmark{font-size:clamp(20px,2vw,30px);font-weight:900;letter-spacing:-.06em}
+.site-nav{display:flex;align-items:center;gap:clamp(20px,3vw,48px);font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.04em}
+.site-nav>a:not(.nav-cta){position:relative;padding:10px 0}
+.site-nav>a:not(.nav-cta)::after{content:"";position:absolute;height:2px;left:0;right:100%;bottom:2px;background:var(--signal);transition:right .18s linear}
+.site-nav>a:hover::after{right:0}
+.nav-cta{background:var(--ink);color:var(--paper);padding:15px 22px;display:flex;gap:18px;align-items:center}
+.nav-cta:hover{background:var(--signal)}
+.menu-button{display:none;border:2px solid var(--ink);background:none;padding:9px 13px;font-size:12px;text-transform:uppercase;font-weight:800}
+.section-paper{position:relative;padding:clamp(70px,9vw,140px) var(--pad);background:var(--paper)}
+.section-ink{position:relative;padding:clamp(80px,10vw,150px) var(--pad);background:var(--ink);color:var(--paper)}
+.section-signal{padding:clamp(75px,9vw,130px) var(--pad);background:var(--signal);color:var(--ink);display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(50px,8vw,130px);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.section-label{font:800 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.12em;display:flex;align-items:center;gap:13px;margin-bottom:clamp(30px,5vw,70px)}
+.section-label span{color:var(--signal)}
+.section-signal .section-label span{color:var(--paper)}
+.section-ink .section-label span{color:var(--signal)}
+.button{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;padding:16px 20px;min-width:220px;text-transform:uppercase;font-weight:900;font-size:12px;letter-spacing:.02em;border:2px solid currentColor;transition:transform .12s linear,background .12s linear,color .12s linear}
+.button:hover{transform:translate(-4px,-4px);box-shadow:4px 4px 0 currentColor}
+.button-accent{background:var(--signal);border-color:var(--signal);color:var(--ink)}
+.button-accent:hover{background:var(--acid);border-color:var(--acid)}
+.button-dark{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.button-dark:hover{background:var(--signal);border-color:var(--signal)}
+.text-link{font-weight:800;border-bottom:2px solid var(--ink);padding-bottom:4px}
+.text-link:hover{color:var(--signal);border-color:var(--signal)}
+.hero{padding-top:clamp(36px,5vw,76px);padding-bottom:70px;min-height:calc(100vh - 82px);overflow:hidden}
+.hero-kicker{font:800 clamp(10px,1vw,13px)/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:18px;margin-bottom:22px;position:relative;z-index:3}
+.hero-kicker span{width:72px;height:1px;background:var(--ink)}
+.hero-grid{display:grid;grid-template-columns:minmax(490px,.95fr) minmax(470px,1.05fr);min-height:590px;align-items:stretch;position:relative;z-index:2}
+.hero-copy{position:relative;z-index:3;display:flex;flex-direction:column;justify-content:space-between;padding:5px 0 56px}
+.hero h1{font-family:var(--display);font-stretch:condensed;text-transform:uppercase;font-size:clamp(78px,10vw,166px);line-height:.75;letter-spacing:-.085em;margin:0;font-weight:1000;max-width:6.3ch}
+.hero h1 span{display:block}
+.hero h1 span:nth-child(2){padding-left:.02em}
+.hero h1 span:last-child{position:relative}
+.hero h1 span:last-child::after{content:"";width:.15em;height:.15em;background:var(--signal);display:inline-block;border-radius:50%;margin-left:.04em}
+.hero-lower{display:grid;grid-template-columns:minmax(190px,1fr) minmax(160px,.8fr);gap:22px 35px;align-items:end;max-width:630px;margin-top:45px}
+.hero-statement{font-size:clamp(16px,1.45vw,23px);line-height:1.26;margin:0;font-weight:650;max-width:27ch;border-left:1px solid var(--ink);padding-left:18px}
+.identity{display:flex;flex-direction:column;text-transform:uppercase;line-height:1.3}
+.identity strong{font-size:14px}
+.identity span{font-size:11px;color:var(--muted)}
+.hero-lower .button{grid-column:1/2;margin-top:5px}
+.hero-visual{position:relative;min-height:590px;isolation:isolate}
+.portrait-wrap{position:absolute;inset:0 -2vw -1px -8vw;z-index:2;overflow:hidden;clip-path:polygon(15% 0,100% 0,100% 100%,0 100%,8% 78%,2% 63%,12% 42%)}
+.portrait-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper) 0%,rgba(243,239,230,.55) 10%,transparent 32%),linear-gradient(0deg,var(--paper) 0%,transparent 22%);pointer-events:none}
+.portrait-wrap img{width:100%;height:100%;object-fit:cover;object-position:55% center;filter:grayscale(1) contrast(1.2) brightness(1.03);mix-blend-mode:multiply}
+.phoenix{width:100%;height:auto}
+.phoenix-back{position:absolute;z-index:3;color:var(--signal);width:78%;right:-10%;top:0;opacity:.72;filter:drop-shadow(0 0 25px rgba(255,75,31,.08));transform:rotate(-2deg);mix-blend-mode:multiply;mask-image:linear-gradient(90deg,transparent 0 30%,#000 52%);-webkit-mask-image:linear-gradient(90deg,transparent 0 30%,#000 52%);pointer-events:none}
+.orbit{position:absolute;border:1px solid rgba(10,10,9,.15);border-radius:50%;z-index:0}
+.orbit-a{width:74%;aspect-ratio:1;right:0;top:5%}
+.orbit-b{width:48%;aspect-ratio:1;right:13%;top:18%}
+.visual-index{position:absolute;right:0;top:51%;z-index:4;border-left:1px solid var(--ink);padding:0 0 0 18px;display:flex;flex-direction:column;text-transform:uppercase}
+.visual-index b{font-size:22px;margin-bottom:14px}
+.visual-index span{font-size:10px;font-weight:800;line-height:1.35}
+.torn-divider{height:115px;position:absolute;left:-1%;right:-1%;bottom:280px;background:var(--ink);z-index:7;clip-path:polygon(0 38%,12% 32%,22% 40%,36% 31%,51% 40%,66% 29%,78% 36%,91% 27%,100% 33%,100% 100%,0 100%)}
+.hero-cards{position:relative;z-index:8;display:grid;grid-template-columns:repeat(3,1fr);max-width:1120px;margin:0 auto -18px;top:24px}
+.hero-card{min-height:295px;border:2px solid var(--ink);padding:22px;position:relative;display:flex;flex-direction:column;transition:transform .15s linear}
+.hero-card:hover{transform:translateY(-10px)}
+.hero-card.light{background:var(--paper)}
+.hero-card.dark{background:var(--ink);color:var(--paper)}
+.card-no{font:900 13px/1 var(--mono);color:var(--signal)}
+.card-arrow{position:absolute;right:20px;top:18px;font-size:21px}
+.hero-card h2{font-size:25px;text-transform:uppercase;letter-spacing:-.04em;margin:16px 0 5px}
+.hero-card p{font-size:13px;max-width:28ch;margin:0;color:var(--muted)}
+.hero-card.dark p{color:#bdb8ae}
+.hero-card strong{font-size:11px;text-transform:uppercase;margin-top:auto;padding-top:15px;border-top:1px solid currentColor;color:var(--signal)}
+.mini-graphic{height:80px;margin:16px -22px 0;position:relative;overflow:hidden;border-top:1px solid currentColor}
+.contour{background:repeating-radial-gradient(ellipse at 70% 100%,transparent 0 8px,rgba(10,10,9,.16) 9px 10px)}
+.staircase{background:var(--paper);display:flex;align-items:flex-end;gap:7px;padding:14px 35px}
+.staircase i{display:block;width:16%;border:1px solid var(--signal);height:24%}.staircase i:nth-child(2){height:43%}.staircase i:nth-child(3){height:65%}.staircase i:nth-child(4){height:92%;background:rgba(255,75,31,.12)}
+.solar{background:var(--ink)}
+.solar::before,.solar::after{content:"";position:absolute;left:50%;top:50%;border:1px solid #77736b;border-radius:50%;transform:translate(-50%,-50%)}
+.solar::before{width:170px;height:56px}.solar::after{width:120px;height:34px}
+.solar i{position:absolute;width:20px;height:20px;border-radius:50%;background:var(--signal);left:54%;top:38%;box-shadow:0 0 30px var(--signal)}
+.hero-side-note,.hero-location{position:absolute;z-index:8;bottom:55px;text-transform:uppercase;font:700 10px/1.5 var(--mono)}
+.hero-side-note{left:22px;writing-mode:vertical-rl;transform:rotate(180deg);color:var(--paper)}
+.hero-location{right:var(--pad);text-align:right;color:var(--paper)}
+.hero-location span{color:#bcb8ae}
+.marquee{background:var(--ink);color:var(--paper);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);overflow:hidden;padding:13px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;align-items:center;gap:26px;min-width:max-content;animation:marquee 22s linear infinite;font:900 12px/1 var(--mono);letter-spacing:.18em}
+.marquee-track i{color:var(--signal);font-style:normal}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.about{padding-top:clamp(95px,11vw,160px)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(50px,9vw,150px);align-items:start}
+.about-title{position:relative;min-height:530px}
+.about-title h2,.insturix h2,.record-heading h2,.backing h2,.writing-heading h2,.contact h2{font-family:var(--display);font-size:clamp(72px,9vw,150px);line-height:.78;letter-spacing:-.075em;text-transform:uppercase;margin:0;font-weight:1000}
+em{font-style:normal;color:var(--signal)}
+.phoenix-mark{position:absolute;width:360px;color:var(--signal);opacity:.12;left:26%;bottom:-30px;transform:rotate(9deg)}
+.about-copy{padding-top:15px}
+.about-copy .lede{font-size:clamp(25px,3vw,43px);line-height:1.05;letter-spacing:-.045em;color:var(--ink);font-weight:750;margin:0 0 34px}
+.about-copy p{font-size:clamp(16px,1.45vw,20px);max-width:58ch;color:var(--muted)}
+.about-actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:42px}
+.stats{margin-top:clamp(75px,9vw,130px);display:grid;grid-template-columns:repeat(4,1fr);border:2px solid var(--ink)}
+.stats>div{padding:clamp(22px,3vw,42px);border-right:1px solid var(--ink);display:flex;align-items:flex-end;justify-content:space-between;gap:15px}
+.stats>div:last-child{border-right:0}
+.stats strong{font-family:var(--display);font-size:clamp(50px,6vw,92px);letter-spacing:-.07em;line-height:.8}
+.stats span{font:750 10px/1.45 var(--mono);text-transform:uppercase;color:var(--muted)}
+.insturix{overflow:hidden}
+.insturix::after{content:"INSTURIX";position:absolute;right:-.04em;top:80px;font:1000 clamp(120px,23vw,380px)/.75 var(--display);letter-spacing:-.09em;color:rgba(243,239,230,.028);pointer-events:none}
+.insturix-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(50px,8vw,140px);align-items:end;position:relative;z-index:2}
+.eyebrow{text-transform:uppercase;font:800 11px/1 var(--mono);letter-spacing:.13em;color:var(--signal);margin:0 0 25px}
+.insturix-copy p{font-size:clamp(18px,2vw,28px);line-height:1.25;color:#bcb7ad;margin:0 0 36px}
+.production-list{border-top:1px solid #4c4943;margin-top:clamp(70px,9vw,130px);position:relative;z-index:2}
+.production-list article{display:grid;grid-template-columns:72px .75fr 1.25fr .7fr;align-items:center;gap:22px;border-bottom:1px solid #4c4943;padding:25px 0;transition:padding .15s linear,background .15s linear,color .15s linear}
+.production-list article:hover{background:var(--signal);color:var(--ink);padding-left:20px;padding-right:20px}
+.production-list span{font:800 11px/1 var(--mono);color:var(--signal)}
+.production-list article:hover span{color:var(--ink)}
+.production-list h3{font-family:var(--display);font-size:clamp(35px,4vw,70px);text-transform:uppercase;letter-spacing:-.055em;margin:0;line-height:.8}
+.production-list p{color:#aaa59c;margin:0;font-size:14px;max-width:44ch}
+.production-list article:hover p{color:var(--ink)}
+.production-list b{font:800 10px/1.4 var(--mono);text-transform:uppercase;text-align:right;color:#aaa59c}
+.production-list article:hover b{color:var(--ink)}
+.record-heading{display:grid;grid-template-columns:1.1fr .65fr;gap:clamp(50px,8vw,130px);align-items:end}
+.record-heading p{font-size:clamp(17px,1.7vw,24px);line-height:1.3;color:var(--muted);margin:0}
+.record-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);border-left:2px solid var(--ink);margin-top:clamp(65px,8vw,110px)}
+.record-card{min-height:330px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:28px;display:flex;flex-direction:column;transition:background .12s linear,color .12s linear}
+.record-card:hover{background:var(--ink);color:var(--paper)}
+.record-card>span{font:800 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--signal);margin-bottom:auto}
+.record-card h3{font-family:var(--display);font-size:clamp(31px,3vw,48px);text-transform:uppercase;letter-spacing:-.05em;line-height:.9;margin:38px 0 13px}
+.record-card p{font-size:14px;color:var(--muted);margin:0;max-width:34ch}
+.record-card:hover p{color:#bdb8ae}
+.record-card a{font:800 10px/1 var(--mono);text-transform:uppercase;color:var(--signal);margin-top:25px}
+.record-card.featured{background:var(--signal)}
+.record-card.featured>span,.record-card.featured a{color:var(--ink)}
+.record-card.featured p{color:#2f180f}
+.record-card.featured:hover{background:var(--ink)}
+.record-card.featured:hover>span,.record-card.featured:hover a{color:var(--signal)}
+.record-card.featured:hover p{color:#bdb8ae}
+.manifesto-card{background:var(--ink);color:var(--paper)}
+.manifesto-card p{color:#bdb8ae}
+.backing-copy h2{font-size:clamp(70px,8vw,130px)}
+.backing-copy p{font-size:18px;max-width:34ch}
+.stamps{border:2px solid var(--ink)}
+.stamps div{padding:24px 28px;border-bottom:2px solid var(--ink);font-family:var(--display);font-size:clamp(26px,3vw,48px);text-transform:uppercase;font-weight:1000;letter-spacing:-.04em;display:flex;justify-content:space-between;align-items:center;transition:background .12s linear,color .12s linear}
+.stamps div:last-child{border-bottom:0}
+.stamps div:hover{background:var(--ink);color:var(--paper)}
+.stamps span{font:800 10px/1 var(--mono)}
+.writing-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.writing-heading h2{font-size:clamp(70px,8.5vw,140px)}
+.writing-list{border-top:2px solid var(--ink);margin-top:clamp(65px,8vw,115px)}
+.writing-list a{display:grid;grid-template-columns:.45fr 1.25fr .85fr 35px;gap:30px;align-items:center;padding:30px 8px;border-bottom:1px solid var(--ink);transition:padding .12s linear,background .12s linear,color .12s linear}
+.writing-list a:hover{padding-left:22px;padding-right:22px;background:var(--signal)}
+.writing-list span{font:800 10px/1.4 var(--mono);text-transform:uppercase;color:var(--signal)}
+.writing-list a:hover span{color:var(--ink)}
+.writing-list h3{font-family:var(--display);font-size:clamp(29px,3vw,50px);text-transform:uppercase;letter-spacing:-.045em;line-height:.9;margin:0}
+.writing-list p{color:var(--muted);font-size:14px;margin:0}
+.writing-list a:hover p{color:var(--ink)}
+.writing-list b{font-size:22px;text-align:right}
+.contact{min-height:95vh;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.contact-content{position:relative;z-index:3}
+.contact-content>p{text-transform:uppercase;font:800 11px/1 var(--mono);letter-spacing:.11em;color:#aaa59b}
+.contact h2{font-size:clamp(85px,13vw,220px);max-width:8ch;margin-top:30px}
+.contact h2 a:hover em{color:var(--acid)}
+.contact-phoenix{position:absolute;width:min(700px,60vw);right:-7%;top:4%;color:var(--signal);opacity:.25;transform:rotate(8deg)}
+.contact-links{position:relative;z-index:3;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #57534b;margin-top:100px}
+.contact-links a{padding:20px;border-right:1px solid #57534b;text-transform:uppercase;font:800 11px/1 var(--mono);display:flex;justify-content:space-between}
+.contact-links a:last-child{border-right:0}
+.contact-links a:hover{background:var(--signal);color:var(--ink)}
+footer{position:relative;z-index:3;margin-top:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;text-transform:uppercase;font:700 9px/1.4 var(--mono);color:#8e8980}
+footer a:hover{color:var(--signal)}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .55s linear,transform .55s linear}
+.js .reveal.in{opacity:1;transform:none}
+@media (max-width:1100px){
+  .hero-grid{grid-template-columns:1fr;min-height:auto}.hero-visual{min-height:560px;margin-top:-80px}.hero-copy{padding-bottom:10px}.hero h1{font-size:clamp(86px,15vw,160px)}.hero-lower{position:relative;z-index:5}.visual-index{right:10px}.torn-divider{bottom:278px}.hero-side-note{display:none}
+  .about-grid,.insturix-intro,.record-heading{grid-template-columns:1fr}.about-title{min-height:auto}.phoenix-mark{position:absolute;left:auto;right:0;bottom:-80px;width:280px}.stats{grid-template-columns:repeat(2,1fr)}.stats>div:nth-child(2){border-right:0}.stats>div:nth-child(-n+2){border-bottom:1px solid var(--ink)}
+  .record-grid{grid-template-columns:repeat(2,1fr)}.section-signal{grid-template-columns:1fr}.writing-heading{align-items:flex-start;flex-direction:column}.writing-list a{grid-template-columns:.35fr 1.4fr 1fr 25px}
 }
-@media(prefers-reduced-motion:reduce){
-  *{transition:none!important;animation:none!important}
-  .js .rv{opacity:1;transform:none}
+@media (max-width:760px){
+  :root{--pad:18px}.site-header{height:68px}.menu-button{display:block}.site-nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);border-bottom:2px solid var(--ink);padding:18px;flex-direction:column;align-items:stretch;gap:0}.site-nav.open{display:flex}.site-nav a{padding:16px 0;border-bottom:1px solid var(--ink)}.site-nav .nav-cta{margin-top:12px;border:0}
+  .section-paper,.section-ink,.section-signal{padding-top:72px;padding-bottom:72px}.hero{padding-top:28px;padding-bottom:55px}.hero-kicker{font-size:9px}.hero h1{font-size:clamp(70px,23vw,112px);line-height:.78}.hero-lower{grid-template-columns:1fr;margin-top:30px}.hero-lower .button{grid-column:auto}.hero-statement{font-size:17px}.hero-visual{min-height:430px;margin-top:-20px}.portrait-wrap{inset:0 -45% 0 -25%}.phoenix-back{width:100%;right:-28%;top:3%}.visual-index{display:none}.torn-divider{height:75px;bottom:655px}.hero-cards{grid-template-columns:1fr;top:10px}.hero-card{min-height:240px}.hero-side-note,.hero-location{display:none}
+  .about-title h2,.insturix h2,.record-heading h2,.backing h2,.writing-heading h2{font-size:clamp(64px,21vw,105px)}.about-copy .lede{font-size:29px}.phoenix-mark{display:none}.stats{grid-template-columns:1fr}.stats>div{border-right:0!important;border-bottom:1px solid var(--ink)!important}.stats>div:last-child{border-bottom:0!important}
+  .production-list article{grid-template-columns:42px 1fr;padding:22px 0}.production-list article p,.production-list article b{grid-column:2;text-align:left}.record-grid{grid-template-columns:1fr}.record-card{min-height:280px}.section-signal{display:block}.stamps{margin-top:45px}.stamps div{font-size:27px;padding:18px}.writing-list a{grid-template-columns:1fr 30px;gap:12px}.writing-list span,.writing-list p{grid-column:1}.writing-list h3{font-size:31px}.writing-list b{grid-column:2;grid-row:1/4}.contact h2{font-size:clamp(62px,18vw,88px);max-width:100%}.contact-links{grid-template-columns:1fr 1fr}.contact-links a:nth-child(2){border-right:0}.contact-links a:nth-child(-n+2){border-bottom:1px solid #57534b}.contact-phoenix{width:78vw;right:-12%;top:13%}
 }
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee-track{animation:none}.js .reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
 </style>
+  <script>document.documentElement.classList.add('js')</script>
+
+  <link rel="canonical" href="https://nimitgotnolimit.com/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Nimit Jain">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Nimit Jain">
+  <meta property="og:title" content="Nimit Jain, Founder &amp; CEO of Insturix">
+  <meta property="og:description" content="Nimit Jain is the founder and CEO of Insturix, an AI-native content production platform. One platform for the entire production: script, edit, analyze, design, music and publish.">
+  <meta property="og:url" content="https://nimitgotnolimit.com/">
+  <meta property="og:image" content="https://nimitgotnolimit.com/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nimit Jain, founder and CEO of Insturix">
+  <meta property="profile:first_name" content="Nimit">
+  <meta property="profile:last_name" content="Jain">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@nimitgotnolimit">
+  <meta name="twitter:creator" content="@nimitgotnolimit">
+  <meta name="twitter:title" content="Nimit Jain, Founder &amp; CEO of Insturix">
+  <meta name="twitter:description" content="Nimit Jain is the founder and CEO of Insturix, an AI-native content production platform. One platform for the entire production: script, edit, analyze, design, music and publish.">
+  <meta name="twitter:image" content="https://nimitgotnolimit.com/og.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a09'/%3E%3Ctext x='50' y='52' font-family='Helvetica,Arial,sans-serif' font-size='64' font-weight='800' fill='%23f3efe6' text-anchor='middle' dominant-baseline='central'%3EN%3C/text%3E%3Ccircle cx='79' cy='75' r='9' fill='%23ff4b1f'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="portrait.webp" type="image/webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://nimitgotnolimit.com/#nimit",
+        "name": "Nimit Jain",
+        "givenName": "Nimit",
+        "familyName": "Jain",
+        "url": "https://nimitgotnolimit.com/",
+        "image": "https://nimitgotnolimit.com/portrait.jpg",
+        "jobTitle": "Founder & CEO",
+        "email": "mailto:jainnimit728@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Noida", "addressRegion": "Uttar Pradesh", "addressCountry": "IN" },
+        "worksFor": { "@id": "https://insturix.com/#org" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Jaypee Institute of Information Technology" },
+        "knowsAbout": ["AI content production","Video editing systems","B2B SaaS","Startup operations","Systems design"],
+        "sameAs": [
+          "https://x.com/nimitgotnolimit",
+          "https://www.instagram.com/nimitgotnolimit",
+          "https://www.youtube.com/@nimitgotnolimit",
+          "https://in.linkedin.com/in/nimit-jain2005",
+          "https://insturix.com"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://insturix.com/#org",
+        "name": "Insturix",
+        "url": "https://insturix.com",
+        "description": "AI-native content production platform. One platform for the entire production, from script to publish.",
+        "foundingDate": "2025-05",
+        "founder": { "@id": "https://nimitgotnolimit.com/#nimit" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Noida", "addressCountry": "IN" },
+        "sameAs": ["https://x.com/insturix","https://www.linkedin.com/company/insturix"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nimitgotnolimit.com/#website",
+        "url": "https://nimitgotnolimit.com/",
+        "name": "Nimit Jain",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://nimitgotnolimit.com/#nimit" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"><span></span></div>
 
-<div class="bar"></div>
-<div class="frame">
-  <div class="meta">
-    <span>NIMIT JAIN</span>
-    <span>FOUNDER &amp; CEO / INSTURIX</span>
-    <span>NOIDA, INDIA</span>
-    <span>OPEN TO CONVERSATIONS</span>
-  </div>
-</div>
-<div class="bar"></div>
-
-<div class="frame">
-  <header class="hero">
-    <p class="sys"><b>SYS.01</b> AI × CONTENT PRODUCTION <span>/</span> B2B SAAS <span>/</span> BACKED BY GOOGLE &amp; MICROSOFT <span>/</span> EST. MAY 2025</p>
-    <h1>
-      <span class="out">Nimit</span><br>
-      <span class="fill">Jain.</span>
-    </h1>
-    <div class="herogrid">
-      <p>I build the system that turns a brief into <u>finished, channel-ready video</u>.
-         Script through publish. One platform. No tool-switching.</p>
-      <figure class="portrait" id="portrait" style="margin:0">
-        <img id="photo" src="photo.jpg" alt="Nimit Jain">
-        <div class="ph"><b>[ ]</b>DROP PHOTO.JPG<br>INTO THIS FOLDER</div>
-        <figcaption><span>N. JAIN</span><span>FIG.01</span></figcaption>
-      </figure>
-    </div>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Nimit Jain home">nimitgotnolimit.com</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#insturix">Insturix</a>
+      <a href="#record">Record</a>
+      <a href="#writing">Writing</a>
+      <a class="nav-cta" href="mailto:jainnimit728@gmail.com">Let’s build <span>↗</span></a>
+    </nav>
   </header>
-</div>
 
-<div class="tick" aria-hidden="true">
-  <div class="track" id="track">
-    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i> ONE PLATFORM, ENTIRE PRODUCTION <i>//</i> 350+ CUSTOMERS <i>//</i> 12 TOOLS, 6 STAGES <i>//</i> BRIEF IN, FINISHED VIDEO OUT <i>//</i></span>
-    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i> ONE PLATFORM, ENTIRE PRODUCTION <i>//</i> 350+ CUSTOMERS <i>//</i> 12 TOOLS, 6 STAGES <i>//</i> BRIEF IN, FINISHED VIDEO OUT <i>//</i></span>
-  </div>
-  <div class="track" id="track2">
-    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i> ONE PLATFORM, ENTIRE PRODUCTION <i>//</i> 350+ CUSTOMERS <i>//</i> 12 TOOLS, 6 STAGES <i>//</i> BRIEF IN, FINISHED VIDEO OUT <i>//</i></span>
-    <span>SCRIPT <i>/</i> EDIT <i>/</i> ANALYZE <i>/</i> DESIGN <i>/</i> MUSIC <i>/</i> PUBLISH <i>//</i> ONE PLATFORM, ENTIRE PRODUCTION <i>//</i> 350+ CUSTOMERS <i>//</i> 12 TOOLS, 6 STAGES <i>//</i> BRIEF IN, FINISHED VIDEO OUT <i>//</i></span>
-  </div>
-</div>
+  <main>
+    <section class="hero section-paper" aria-labelledby="hero-title">
+      <div class="hero-kicker reveal">Founder. Builder. Operator. Systems thinker. <span></span></div>
 
-<div class="frame">
-  <div class="ledger">
-    <div><b data-count="350" data-suffix="+">0</b><span>PAID &amp; FREE CUSTOMERS<br>IN THE FIRST 3.5 MONTHS</span></div>
-    <div><b data-count="20" data-suffix="+">0</b><span>PEOPLE ON THE TEAM<br>ACROSS PRODUCT &amp; GTM</span></div>
-    <div><b data-count="12">0</b><span>TOOLS INSIDE STUDIO<br>ONE BROWSER TAB</span></div>
-    <div><b data-count="6" data-pad="2">0</b><span>STAGES, BRIEF TO PUBLISH<br>NOTHING TO INSTALL</span></div>
-  </div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="reveal">
+            <span>No limit</span>
+            <span>is a</span>
+            <span>system.</span>
+          </h1>
 
-  <section>
-    <span class="tag">01 / THE COMPANY</span>
-    <h2>One platform,<br>entire production.</h2>
-    <p class="body">Most teams stitch six tools together and lose the thread between them.
-       Studio keeps every stage on the same brief and the same brand. Hand it a brief.
-       Every cut comes back shaped for its channel. All in the browser.</p>
-    <div class="spec rv">
-      <div class="s"><span class="no">01</span><h3>Script</h3><small>Briefs → structured treatments</small></div>
-      <div class="s"><span class="no">02</span><h3>Edit</h3><small>Captions, colour, audio / handled</small></div>
-      <div class="s"><span class="no">03</span><h3>Analyze</h3><small>Pacing / retention / brand</small></div>
-      <div class="s"><span class="no">04</span><h3>Design</h3><small>Frames generated + ranked</small></div>
-      <div class="s"><span class="no">05</span><h3>Music</h3><small>Licensed tracks matched</small></div>
-      <div class="s"><span class="no">06</span><h3>Publish</h3><small>One master → every platform</small></div>
+          <div class="hero-lower reveal">
+            <p class="hero-statement">I build companies, design systems, and turn complex problems into scalable outcomes.</p>
+            <div class="identity">
+              <strong>Nimit Jain</strong>
+              <span>Founder &amp; CEO, Insturix</span>
+            </div>
+            <a class="button button-accent" href="#insturix">See what I’m building <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Portrait of Nimit Jain with a geometric phoenix">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <svg class="phoenix phoenix-back" viewBox="0 0 720 720" role="img" aria-label="Geometric phoenix emblem">
+            <g fill="currentColor">
+              <path d="M354 351 290 287 238 199 164 134 64 82l90 125 75 47-104-25 93 78 86 41-106-5 96 62 62 23z"/>
+              <path d="m366 351 64-64 52-88 74-65 100-52-90 125-75 47 104-25-93 78-86 41 106-5-96 62-62 23z"/>
+              <path d="M360 224c-38 6-57 29-56 63 3-13 13-23 27-28-1 21 9 42 29 59 20-17 30-38 29-59 14 5 24 15 27 28 1-34-18-57-56-63z"/>
+              <path d="m360 315-49 71 26 28-38 91 46-35 15 130 15-130 46 35-38-91 26-28z"/>
+            </g>
+          </svg>
+          <div class="portrait-wrap">
+            <picture><source srcset="portrait.webp" type="image/webp"><img src="portrait.jpg" alt="Nimit Jain, founder and CEO of Insturix, in a black suit" width="1400" height="788" fetchpriority="high" decoding="async"></picture>
+          </div>
+          <div class="visual-index">
+            <b>01</b>
+            <span>Mindset<br>Systems<br>Impact</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="torn-divider" aria-hidden="true"></div>
+
+      <div class="hero-cards reveal">
+        <a class="hero-card light" href="#record">
+          <span class="card-no">01</span>
+          <span class="card-arrow">↗</span>
+          <h2>Projects</h2>
+          <p>Companies I’ve built, scaled, and am building next.</p>
+          <div class="mini-graphic contour"></div>
+          <strong>View the record</strong>
+        </a>
+        <a class="hero-card dark" href="#writing">
+          <span class="card-no">02</span>
+          <span class="card-arrow">↗</span>
+          <h2>Writing</h2>
+          <p>Ideas on systems, leverage, execution and the creator economy.</p>
+          <div class="mini-graphic staircase"><i></i><i></i><i></i><i></i></div>
+          <strong>Read the thinking</strong>
+        </a>
+        <a class="hero-card light" href="#insturix">
+          <span class="card-no">03</span>
+          <span class="card-arrow">↗</span>
+          <h2>Current focus</h2>
+          <p>Building the infrastructure behind AI-native content production.</p>
+          <div class="mini-graphic solar"><i></i></div>
+          <strong>Explore Insturix</strong>
+        </a>
+      </div>
+
+      <aside class="hero-side-note">Compounding impact.<br>Built to last.</aside>
+      <aside class="hero-location">Delhi NCR<br><span>India → Worldwide</span></aside>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>NO LIMIT</span><i>✦</i><span>BUILD</span><i>✦</i><span>LEARN</span><i>✦</i><span>SHIP</span><i>✦</i><span>REPEAT</span><i>✦</i>
+        <span>NO LIMIT</span><i>✦</i><span>BUILD</span><i>✦</i><span>LEARN</span><i>✦</i><span>SHIP</span><i>✦</i><span>REPEAT</span><i>✦</i>
+      </div>
     </div>
-  </section>
 
-  <section>
-    <span class="tag">02 / RECORD</span>
-    <h2>Track record.</h2>
-    <div class="cards rv">
-      <div class="card"><span class="yr">MAY 2025 &rarr; NOW</span><h3>Insturix</h3>
-        <p>Founder &amp; CEO. Team of 20+. Google + Microsoft for Startups. Incubated at
-           Shiv Nadar University.</p></div>
-      <div class="card"><span class="yr">MAY 2026 &rarr; JUL 2026</span><h3>Modifyed Digital</h3>
-        <p>BD Intern. Outreach systems, lead-enrichment pipelines, client proposals.</p></div>
-      <div class="card"><span class="yr">MAY 2025 &rarr; JUL 2025</span><h3>Charchit Jain Fdn.</h3>
-        <p>Teacher. Maths + science for underprivileged students, ages 10 to 14.</p></div>
-      <div class="card"><span class="yr">2024 &rarr; 2027</span><h3>BBA</h3>
-        <p>Jaypee Institute of Information Technology, Noida. Business management,
-           managerial economics, accounting.</p></div>
-      <div class="card"><span class="yr">JUL 2023 &rarr; APR 2024</span><h3>Quintessence MUN</h3>
-        <p>Founder. 120+ team, 250+ tickets. TATA Water, Upstox. IIT Roorkee,
-           Guwahati, Bhubaneswar.</p></div>
-      <div class="card"><span class="yr">2022 &rarr; 2023</span><h3>Event Production</h3>
-        <p>Lead organiser. Production + partnerships for Delhi NCR student conferences.
-           100+ trained.</p></div>
-    </div>
-  </section>
+    <section class="about section-paper" id="about">
+      <div class="section-label reveal"><span>01</span> About</div>
+      <div class="about-grid">
+        <div class="about-title reveal">
+          <h2>Build.<br>Learn.<br><em>Repeat.</em></h2>
+          <svg class="phoenix phoenix-mark" viewBox="0 0 720 720" aria-hidden="true">
+            <g fill="currentColor">
+              <path d="M354 351 290 287 238 199 164 134 64 82l90 125 75 47-104-25 93 78 86 41-106-5 96 62 62 23z"/>
+              <path d="m366 351 64-64 52-88 74-65 100-52-90 125-75 47 104-25-93 78-86 41 106-5-96 62-62 23z"/>
+              <path d="M360 224c-38 6-57 29-56 63 3-13 13-23 27-28-1 21 9 42 29 59 20-17 30-38 29-59 14 5 24 15 27 28 1-34-18-57-56-63z"/>
+              <path d="m360 315-49 71 26 28-38 91 46-35 15 130 15-130 46 35-38-91 26-28z"/>
+            </g>
+          </svg>
+        </div>
+        <div class="about-copy reveal">
+          <p class="lede">I’m Nimit Jain, a founder from Delhi building at the intersection of AI, content production and business systems.</p>
+          <p>Insturix started from a simple frustration: producing one strong piece of content still requires too many tools, too many handoffs and too much specialist knowledge. I’m working on replacing that fragmented workflow with one connected system, from the brief to the final published asset.</p>
+          <p>I care about leverage over busyness, systems over motivation, and execution that compounds. Outside the company, I write about building, lead teams, experiment with frontier AI and teach young students maths and science.</p>
+          <div class="about-actions">
+            <a class="button button-dark" href="https://in.linkedin.com/in/nimit-jain2005" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+            <a class="text-link" href="mailto:jainnimit728@gmail.com">jainnimit728@gmail.com <span>↗</span></a>
+          </div>
+        </div>
+      </div>
 
-  <section>
-    <span class="tag">03 / OFF THE CLOCK</span>
-    <h2>Side projects.</h2>
-    <div class="cards rv">
-      <div class="card"><span class="yr">2026 &rarr; NOW</span><h3>SalesOS</h3>
-        <p>Designed + built. Self-hosted sales stack: CRM enrichment, call-recording
-           analysis, daily coaching reports, auto follow-ups.</p></div>
-      <div class="card"><span class="yr">ONGOING</span><h3>Stocker</h3>
-        <p>Independent research. Multi-agent algo-trading system for Indian + US equities.</p></div>
-    </div>
-    <div class="stamps rv" style="margin-top:14px">
-      <span>THEORETICAL PHYSICS</span>
-      <span>QUANTUM COMPUTING</span>
-      <span>PROPULSION RESEARCH</span>
-    </div>
-  </section>
+      <div class="stats reveal" aria-label="Current website metrics">
+        <div><strong data-count="350" data-suffix="+">0</strong><span>Customers<br>in 3.5 months</span></div>
+        <div><strong data-count="20" data-suffix="+">0</strong><span>People<br>on the team</span></div>
+        <div><strong data-count="12">0</strong><span>Tools<br>inside Studio</span></div>
+        <div><strong data-count="6" data-pad="2">0</strong><span>Production<br>stages</span></div>
+      </div>
+    </section>
 
-  <section>
-    <span class="tag">04 / BACKING</span>
-    <h2>Stamped.</h2>
-    <div class="stamps rv">
-      <span>GOOGLE FOR STARTUPS</span>
-      <span>MICROSOFT FOR STARTUPS</span>
-      <span>DPIIT RECOGNIZED</span>
-      <span>SHIV NADAR UNIV / INCUBATED</span>
-      <span>UP GOVERNMENT GRANT</span>
-      <span>STARTUPBASE DAILY WINNER '26</span>
-    </div>
-  </section>
+    <section class="insturix section-ink" id="insturix">
+      <div class="section-label reveal"><span>02</span> The company</div>
+      <div class="insturix-intro reveal">
+        <div>
+          <p class="eyebrow">Insturix / AI-native production system</p>
+          <h2>One brief.<br>Every stage.<br><em>One system.</em></h2>
+        </div>
+        <div class="insturix-copy">
+          <p>Most content teams stitch together six or more tools and lose context at every handoff. Insturix keeps the brief, brand and production logic connected from start to finish, inside the browser.</p>
+          <a class="button button-accent" href="https://insturix.com" target="_blank" rel="noopener">Visit Insturix <span>↗</span></a>
+        </div>
+      </div>
 
-  <section class="end">
-    <span class="tag">05 / CONTACT</span>
-    <h2><a href="mailto:jainnimit728@gmail.com">Say hello.</a></h2>
-    <p class="mailline">
-      <a href="mailto:jainnimit728@gmail.com">jainnimit728@gmail.com</a>
-      <button type="button" id="copymail" data-mail="jainnimit728@gmail.com">Copy</button>
-    </p>
-    <div class="ends rv">
-      <a href="mailto:jainnimit728@gmail.com">EMAIL</a>
-      <a href="https://x.com/nimitgotnolimit" target="_blank" rel="noopener">X</a>
-      <a href="https://instagram.com/nimitgotnolimit" target="_blank" rel="noopener">INSTAGRAM</a>
-      <a href="https://youtube.com/@nimitgotnolimit" target="_blank" rel="noopener">YOUTUBE</a>
-      <a href="https://in.linkedin.com/in/nimit-jain2005" target="_blank" rel="noopener">LINKEDIN</a>
-      <a href="https://insturix.com" target="_blank" rel="noopener">INSTURIX.COM</a>
-    </div>
-    <footer><span>NIMIT JAIN © 2026</span><span>NO TEMPLATES WERE HARMED</span></footer>
-  </section>
-</div>
+      <div class="production-list reveal">
+        <article><span>01</span><h3>Script</h3><p>Briefs become structured treatments, angles and channel-specific scripts.</p><b>Brief → narrative</b></article>
+        <article><span>02</span><h3>Edit</h3><p>Long-form and short-form video assembled with captions, sound and motion.</p><b>Footage → final cut</b></article>
+        <article><span>03</span><h3>Analyze</h3><p>Content reviewed for pacing, retention, relevance and brand consistency.</p><b>Signals → decisions</b></article>
+        <article><span>04</span><h3>Design</h3><p>Thumbnails, frames and campaign visuals generated within the same context.</p><b>Brand → visual system</b></article>
+        <article><span>05</span><h3>Music</h3><p>Tracks and sound direction matched to the narrative and intended emotion.</p><b>Mood → sound</b></article>
+        <article><span>06</span><h3>Publish</h3><p>One approved master adapted, scheduled and deployed across channels.</p><b>Master → everywhere</b></article>
+      </div>
+    </section>
+
+    <section class="record section-paper" id="record">
+      <div class="section-label reveal"><span>03</span> Record</div>
+      <div class="record-heading reveal">
+        <h2>Built in public.<br><em>Proven in practice.</em></h2>
+        <p>A track record across startups, public speaking, communities and education, each one teaching a different part of how systems, people and execution work together.</p>
+      </div>
+
+      <div class="record-grid reveal">
+        <article class="record-card featured">
+          <span>2024 to Now</span>
+          <h3>Insturix</h3>
+          <p>Founder &amp; CEO. Building an end-to-end AI-driven platform for content production with support from startup and compute ecosystems.</p>
+          <a href="https://insturix.com" target="_blank" rel="noopener">Open company ↗</a>
+        </article>
+        <article class="record-card">
+          <span>2023 to 2024</span>
+          <h3>Quintessence MUN</h3>
+          <p>Founded and operated a 120+ person team, sold 250+ tickets and built partnerships across major institutions and brands.</p>
+        </article>
+        <article class="record-card">
+          <span>2023</span>
+          <h3>Meliora</h3>
+          <p>President of a major Delhi NCR public-speaking symposium, with 110+ paid participants and 100+ people trained.</p>
+        </article>
+        <article class="record-card">
+          <span>2022 to 2023</span>
+          <h3>Panegyric MUN</h3>
+          <p>Senior Convenor handling production, partnerships, volunteers and participation across schools.</p>
+        </article>
+        <article class="record-card">
+          <span>2025 to Now</span>
+          <h3>Charchit Jain Foundation</h3>
+          <p>Teaching maths and science to students aged 10–14.</p>
+        </article>
+        <article class="record-card manifesto-card">
+          <span>Operating principle</span>
+          <h3>Systems over motivation.</h3>
+          <p>Build once. Improve continuously. Let good structure carry the weight when energy cannot.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="backing section-signal">
+      <div class="backing-copy reveal">
+        <div class="section-label"><span>04</span> Backing</div>
+        <h2>Stamped by<br>the ecosystem.</h2>
+        <p>Programs, institutions and infrastructure supporting the journey.</p>
+      </div>
+      <div class="stamps reveal">
+        <div>Google for Startups <span>01</span></div>
+        <div>Microsoft for Startups <span>02</span></div>
+        <div>Shiv Nadar University / Incubated <span>03</span></div>
+        <div>Ramanujan Supercomputer <span>04</span></div>
+        <div>StartupBase Daily Winner ’26 <span>05</span></div>
+      </div>
+    </section>
+
+    <section class="writing section-paper" id="writing">
+      <div class="section-label reveal"><span>05</span> Writing</div>
+      <div class="writing-heading reveal">
+        <h2>Ideas should<br><em>change behaviour.</em></h2>
+        <a class="button button-dark" href="https://in.linkedin.com/in/nimit-jain2005" target="_blank" rel="noopener">Read on LinkedIn <span>↗</span></a>
+      </div>
+
+      <div class="writing-list reveal">
+        <a href="https://in.linkedin.com/in/nimit-jain2005" target="_blank" rel="noopener">
+          <span>01 / AI &amp; media</span><h3>Is this the end of conventional editing systems?</h3><p>Why the learning curve of creative software is becoming an interface problem.</p><b>↗</b>
+        </a>
+        <a href="https://in.linkedin.com/in/nimit-jain2005" target="_blank" rel="noopener">
+          <span>02 / Operations</span><h3>Systems over motivation.</h3><p>The structures that let teams produce more without depending on heroic effort.</p><b>↗</b>
+        </a>
+        <a href="https://in.linkedin.com/in/nimit-jain2005" target="_blank" rel="noopener">
+          <span>03 / Building</span><h3>The leverage loop.</h3><p>How products, distribution and learning compound when they share one feedback loop.</p><b>↗</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact section-ink" id="contact">
+      <div class="contact-phoenix" aria-hidden="true">
+        <svg class="phoenix" viewBox="0 0 720 720">
+          <g fill="currentColor">
+            <path d="M354 351 290 287 238 199 164 134 64 82l90 125 75 47-104-25 93 78 86 41-106-5 96 62 62 23z"/>
+            <path d="m366 351 64-64 52-88 74-65 100-52-90 125-75 47 104-25-93 78-86 41 106-5-96 62-62 23z"/>
+            <path d="M360 224c-38 6-57 29-56 63 3-13 13-23 27-28-1 21 9 42 29 59 20-17 30-38 29-59 14 5 24 15 27 28 1-34-18-57-56-63z"/>
+            <path d="m360 315-49 71 26 28-38 91 46-35 15 130 15-130 46 35-38-91 26-28z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="contact-content reveal">
+        <div class="section-label"><span>06</span> Connect</div>
+        <p>Building something ambitious?</p>
+        <h2><a href="mailto:jainnimit728@gmail.com">Let’s make it<br><em>real.</em> ↗</a></h2>
+      </div>
+      <div class="contact-links reveal">
+        <a href="mailto:jainnimit728@gmail.com">Email <span>↗</span></a>
+        <a href="https://in.linkedin.com/in/nimit-jain2005" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+        <a href="https://x.com/nimitgotnolimit" target="_blank" rel="noopener">X / Twitter <span>↗</span></a>
+        <a href="https://insturix.com" target="_blank" rel="noopener">Insturix <span>↗</span></a>
+      </div>
+      <footer>
+        <span>Nimit Jain © 2026</span>
+        <span>Delhi NCR / India / Worldwide</span>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <script>(() => {
+  'use strict';
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const progress = document.querySelector('.progress span');
+  const menuButton = document.querySelector('.menu-button');
+  const nav = document.querySelector('.site-nav');
+
+  const updateProgress = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const value = max > 0 ? (window.scrollY / max) * 100 : 0;
+    progress.style.width = `${value}%`;
+  };
+  updateProgress();
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+
+  menuButton?.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.textContent = open ? 'Close' : 'Menu';
+  });
+  nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+    if (menuButton) menuButton.textContent = 'Menu';
+  }));
+
+  const revealAll = () => document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  if (reduced || !('IntersectionObserver' in window)) {
+    revealAll();
+  } else {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    window.setTimeout(revealAll, 1800);
+  }
+
+  const counters = document.querySelectorAll('[data-count]');
+  const animateCounter = el => {
+    const target = Number(el.dataset.count || 0);
+    const suffix = el.dataset.suffix || '';
+    const pad = Number(el.dataset.pad || 0);
+    if (reduced) {
+      el.textContent = String(target).padStart(pad, '0') + suffix;
+      return;
+    }
+    const start = performance.now();
+    const duration = 900;
+    const tick = now => {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = String(Math.round(target * eased)).padStart(pad, '0') + (p === 1 ? suffix : '');
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  if ('IntersectionObserver' in window) {
+    const counterObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(el => counterObserver.observe(el));
+  } else counters.forEach(animateCounter);
+
+  if (!reduced) {
+    const phoenix = document.querySelector('.phoenix-back');
+    const visual = document.querySelector('.hero-visual');
+    visual?.addEventListener('pointermove', event => {
+      const rect = visual.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      phoenix.style.transform = `translate(${x * 12}px, ${y * 10}px) rotate(${-2 + x * 2}deg)`;
+    });
+    visual?.addEventListener('pointerleave', () => phoenix.style.transform = 'rotate(-2deg)');
+  }
+})();
+</script>
+<!-- ============================================================
+     MOTION LAYER  ·  additive only
+     Nothing above this point was modified. Delete this block and
+     the page returns exactly to how it was.
+     Every effect is disabled under prefers-reduced-motion.
+     ============================================================ -->
+<style>
+:root{ --mo:cubic-bezier(.16,1,.3,1); }
+
+/* 1 ── HERO HEADLINE: the three lines wipe up out of a mask, 100ms apart.
+        clip-path rather than an overflow wrapper, so the signal-dot
+        ::after on the last line is never clipped (negative insets). */
+.js .hero h1.reveal{opacity:1;transform:none;transition:none}
+.js .hero h1 span{
+  transform:translateY(.34em);
+  clip-path:inset(-18% -12% 108% -12%);
+  transition:transform 1.05s var(--mo), clip-path 1.05s var(--mo);
+  will-change:transform,clip-path;
+}
+.js .hero h1.in span{transform:none;clip-path:inset(-18% -12% -22% -12%)}
+.js .hero h1.in span:nth-child(2){transition-delay:.1s}
+.js .hero h1.in span:nth-child(3){transition-delay:.2s}
+
+/* 2 ── STAGGER: grid children cascade instead of arriving as one slab.
+        The container's own reveal is neutralised so it doesn't double up. */
+.js .stagger.reveal{opacity:1;transform:none;transition:none}
+.js .stagger > *{
+  opacity:0;transform:translateY(26px);
+  transition:opacity .66s var(--mo), transform .66s var(--mo);
+}
+.js .stagger.stagger-in > *{opacity:1;transform:none}
+.js .stagger.stagger-in > *:nth-child(1){transition-delay:.04s}
+.js .stagger.stagger-in > *:nth-child(2){transition-delay:.10s}
+.js .stagger.stagger-in > *:nth-child(3){transition-delay:.16s}
+.js .stagger.stagger-in > *:nth-child(4){transition-delay:.22s}
+.js .stagger.stagger-in > *:nth-child(5){transition-delay:.28s}
+.js .stagger.stagger-in > *:nth-child(6){transition-delay:.34s}
+.js .stagger.stagger-in > *:nth-child(7){transition-delay:.40s}
+.js .stagger.stagger-in > *:nth-child(8){transition-delay:.46s}
+.js .stagger.stagger-in > *:nth-child(n+9){transition-delay:.52s}
+
+/* 3 ── PORTRAIT wipes in behind its existing torn clip-path */
+.js .portrait-wrap img{
+  transform:scale(1.06);
+  transition:transform 1.6s var(--mo), opacity 1.1s linear;
+  opacity:0;
+}
+.js .hero-visual.in .portrait-wrap img{transform:none;opacity:1}
+
+/* 4 ── ORBITS drift continuously; they were static rings before */
+@keyframes mo-spin{to{transform:rotate(360deg)}}
+@keyframes mo-spin-r{to{transform:rotate(-360deg)}}
+.js .orbit-a{animation:mo-spin 58s linear infinite}
+.js .orbit-b{animation:mo-spin-r 44s linear infinite}
+.js .orbit{transform-origin:50% 50%}
+
+/* 5 ── MAGNETIC buttons: JS sets the transform, CSS owns the spring back */
+.js .button,.js .nav-cta{will-change:transform}
+.js .button{transition:transform .34s var(--mo), background .12s linear, color .12s linear}
+.js .button.mo-mag{transition:transform .08s linear}
+
+/* 6 ── HEADER condenses once you leave the top */
+.js .site-header{transition:height .3s var(--mo), background .3s linear, box-shadow .3s linear}
+.js .site-header.mo-small{height:62px;box-shadow:0 1px 0 rgba(10,10,9,.28)}
+
+/* 7 ── LIST ROWS: the trailing arrow slides in on hover */
+.js .writing-list a > :last-child,
+.js .production-list article > :last-child{transition:transform .28s var(--mo)}
+.js .writing-list a:hover > :last-child,
+.js .production-list article:hover > :last-child{transform:translateX(7px)}
+
+/* 8 ── the JS marquee owns the transform, so stop the CSS keyframe */
+.js.mo-marquee .marquee-track{animation:none!important}
+
+/* 9 ── SECTION LABELS get a drawn rule */
+.js .section-label{overflow:hidden}
+.js .section-label::before{
+  content:"";flex:0 0 0;height:2px;background:var(--signal);
+  transition:flex-basis .9s var(--mo) .15s;
+}
+.js .section-label.mo-drawn::before{flex-basis:38px}
+
+@media (prefers-reduced-motion:reduce){
+  .js .hero h1 span{transform:none!important;clip-path:none!important;transition:none!important}
+  .js .stagger > *{opacity:1!important;transform:none!important;transition:none!important}
+  .js .portrait-wrap img{opacity:1!important;transform:none!important;transition:none!important}
+  .js .orbit-a,.js .orbit-b{animation:none!important}
+  .js .section-label::before{display:none}
+  .js .site-header{transition:none!important}
+}
+</style>
 
 <script>
-(function(){
+(() => {
   'use strict';
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const root = document.documentElement;
 
-  var img=document.getElementById('photo'),fig=document.getElementById('portrait');
-  function miss(){fig.classList.add('empty')}
-  img.addEventListener('error',miss);
-  if(img.complete&&img.naturalWidth===0)miss();
+  /* ---- stagger containers -------------------------------------------- */
+  const groups = document.querySelectorAll(
+    '.hero-cards, .record-grid, .stats, .production-list, .writing-list, .backing-list'
+  );
+  groups.forEach(g => g.classList.add('stagger'));
 
-  (function(){
-    var els=document.querySelectorAll('.rv');
-    function all(){for(var i=0;i<els.length;i++)els[i].classList.add('in')}
-    if(reduce||!('IntersectionObserver'in window))return all();
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){
-      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},
-      {rootMargin:'0px 0px -10% 0px',threshold:.06});
-    els.forEach(function(el){io.observe(el)});
-    setTimeout(function(){if(!document.querySelector('.rv.in'))all()},1400);
+  const showGroups = () => groups.forEach(g => g.classList.add('stagger-in'));
+  const labels = document.querySelectorAll('.section-label');
+  const showLabels = () => labels.forEach(l => l.classList.add('mo-drawn'));
+
+  if (reduced || !('IntersectionObserver' in window)) {
+    showGroups(); showLabels();
+  } else {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add(
+          e.target.classList.contains('section-label') ? 'mo-drawn' : 'stagger-in'
+        );
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -6% 0px' });
+    groups.forEach(g => io.observe(g));
+    labels.forEach(l => io.observe(l));
+    /* fail-open: if the observer never fires, nothing may stay hidden */
+    setTimeout(() => {
+      if (!document.querySelector('.stagger.stagger-in')) showGroups();
+      if (!document.querySelector('.section-label.mo-drawn')) showLabels();
+    }, 1900);
+  }
+
+  if (reduced) return;
+
+  /* ---- marquee reacts to scroll speed + direction --------------------- */
+  (() => {
+    const track = document.querySelector('.marquee-track');
+    if (!track) return;
+    /* The CSS keyframe is only switched off once rAF has actually produced a
+       frame. If rAF is throttled or blocked, the original animation keeps
+       running instead of the marquee freezing. Fail-safe, not fail-dead. */
+    let handedOver = false;
+    let x = 0, drift = 0.55, vel = 0, lastY = window.scrollY, half = 0;
+    const measure = () => { half = track.scrollWidth / 2; };
+    measure();
+    window.addEventListener('resize', measure);
+    window.addEventListener('load', measure);
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY, d = y - lastY;
+      if (Math.abs(d) < 400) vel += d * 0.075;   /* ignore jumps */
+      lastY = y;
+    }, { passive: true });
+    const frame = () => {
+      if (!handedOver) { handedOver = true; root.classList.add('mo-marquee'); }
+      vel *= 0.9;
+      x -= (drift + vel);
+      if (half > 0) { if (x <= -half) x += half; else if (x > 0) x -= half; }
+      track.style.transform = `translate3d(${x.toFixed(2)}px,0,0)`;
+      requestAnimationFrame(frame);
+    };
+    requestAnimationFrame(frame);
   })();
 
-  (function(){
-    var nums=document.querySelectorAll('[data-count]');
-    function run(el){
-      var t=+el.dataset.count,sfx=el.dataset.suffix||'',pad=+el.dataset.pad||0,dur=900,t0=null;
-      if(reduce){el.textContent=String(t).padStart(pad,'0')+sfx;return}
-      (function step(ts){
-        if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);
-        el.textContent=String(Math.round(t*p)).padStart(pad,'0')+(p===1?sfx:'');
-        if(p<1)requestAnimationFrame(step);
-      })(performance.now());
-    }
-    if(!('IntersectionObserver'in window)){nums.forEach(run);return}
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){
-      if(e.isIntersecting){run(e.target);io.unobserve(e.target)}})},{threshold:.4});
-    nums.forEach(function(n){io.observe(n)});
+  /* ---- magnetic buttons ----------------------------------------------- */
+  if (window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
+    document.querySelectorAll('.button, .nav-cta').forEach(btn => {
+      let raf = null;
+      btn.addEventListener('pointermove', e => {
+        if (raf) return;
+        raf = requestAnimationFrame(() => {
+          const r = btn.getBoundingClientRect();
+          const dx = (e.clientX - (r.left + r.width / 2)) / r.width;
+          const dy = (e.clientY - (r.top + r.height / 2)) / r.height;
+          btn.classList.add('mo-mag');
+          btn.style.transform = `translate(${(dx * 9).toFixed(1)}px, ${(dy * 7).toFixed(1)}px)`;
+          raf = null;
+        });
+      });
+      btn.addEventListener('pointerleave', () => {
+        if (raf) { cancelAnimationFrame(raf); raf = null; }
+        btn.classList.remove('mo-mag');
+        btn.style.transform = '';
+      });
+    });
+  }
+
+  /* ---- header condenses off the top ----------------------------------- */
+  (() => {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+    let tick = false;
+    const upd = () => {
+      header.classList.toggle('mo-small', window.scrollY > 90);
+      tick = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!tick) { tick = true; requestAnimationFrame(upd); }
+    }, { passive: true });
+    upd();
   })();
 
-  (function(){
-    var b=document.getElementById('copymail');
-    if(!b)return;
-    b.addEventListener('click',function(){
-      var mail=b.dataset.mail, done=function(){
-        b.textContent='Copied';b.classList.add('done');
-        setTimeout(function(){b.textContent='Copy';b.classList.remove('done')},1600);
-      };
-      if(navigator.clipboard&&navigator.clipboard.writeText){
-        navigator.clipboard.writeText(mail).then(done,fallback);
-      } else fallback();
-      function fallback(){
-        var t=document.createElement('textarea');
-        t.value=mail;t.setAttribute('readonly','');
-        t.style.position='fixed';t.style.opacity='0';
-        document.body.appendChild(t);t.select();
-        try{document.execCommand('copy');done()}catch(e){}
-        document.body.removeChild(t);
-      }
+  /* ---- nav labels scramble on hover -----------------------------------
+     rAF + time based, and always restored on leave / tab-hide, so a
+     starved timer can never strand a link reading as noise.            */
+  (() => {
+    const CH = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ#%&/';
+    const stoppers = [];
+    document.querySelectorAll('.site-nav > a:not(.nav-cta)').forEach(el => {
+      const real = el.textContent;
+      let raf = null;
+      const stop = () => { if (raf) { cancelAnimationFrame(raf); raf = null; } el.textContent = real; };
+      stoppers.push(stop);
+      el.addEventListener('pointerenter', () => {
+        if (raf) return;
+        let t0 = null;
+        const dur = 360;
+        const step = ts => {
+          if (!t0) t0 = ts;
+          const p = Math.min((ts - t0) / dur, 1);
+          const settled = p * real.length;
+          el.textContent = real.split('').map((c, k) =>
+            c === ' ' ? ' ' : (k < settled ? real[k] : CH[(Math.random() * CH.length) | 0])
+          ).join('');
+          if (p < 1) raf = requestAnimationFrame(step);
+          else { raf = null; el.textContent = real; }
+        };
+        raf = requestAnimationFrame(step);
+      });
+      el.addEventListener('pointerleave', stop);
+      el.addEventListener('blur', stop);
+    });
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stoppers.forEach(f => f());
     });
   })();
 
-  (function(){
-    var t1=document.getElementById('track'),t2=document.getElementById('track2');
-    if(!t1||reduce)return;
-    var x=0,base=.8,vel=0,lastY=window.scrollY,w=0;
-    function m(){w=t1.offsetWidth}m();
-    window.addEventListener('resize',m);
-    window.addEventListener('scroll',function(){var y=window.scrollY;vel+=(y-lastY)*.08;lastY=y},{passive:true});
-    (function loop(){
-      vel*=.9;x-=(base+vel);
-      if(w){if(x<=-w)x+=w;else if(x>0)x-=w}
-      var tf='translate3d('+x.toFixed(2)+'px,0,0)';
-      t1.style.transform=tf;t2.style.transform=tf;
-      requestAnimationFrame(loop);
-    })();
+  /* ---- orbits also drift with the pointer, matching the phoenix -------- */
+  (() => {
+    const visual = document.querySelector('.hero-visual');
+    if (!visual) return;
+    const orbs = visual.querySelectorAll('.orbit');
+    if (!orbs.length) return;
+    let raf = null;
+    visual.addEventListener('pointermove', e => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        const r = visual.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        orbs.forEach((o, i) => {
+          const k = i ? 16 : 9;
+          o.style.translate = `${(x * k).toFixed(1)}px ${(y * k * 0.8).toFixed(1)}px`;
+        });
+        raf = null;
+      });
+    }, { passive: true });
+    visual.addEventListener('pointerleave', () => {
+      orbs.forEach(o => { o.style.translate = '0px 0px'; });
+    });
   })();
 })();
 </script>
+
 </body>
 </html>
